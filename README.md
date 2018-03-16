@@ -128,3 +128,13 @@ Used to lookup booking information for users.
 * [Microservices - Martin Fowler](http://martinfowler.com/articles/microservices.html)
 * [Web Development with Go](http://www.apress.com/9781484210536)
 * [Umer Mansoor - Cinema](https://github.com/umermansoor/microservices)
+
+### Change references of repo
+
+```
+find . -name "*.go" -print | xargs sed -i bkp "s/mmorejon/djaque/g"
+find . -name "Dockerfile" -print | xargs sed -i bkp "s/mmorejon/djaque/g"
+```
+
+So you can change the go files and test your changes :D
+Use your own github instead djaque (this is mine)

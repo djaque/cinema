@@ -6,13 +6,13 @@ RUN go get gopkg.in/mgo.v2
 RUN go get github.com/gorilla/mux
 
 # copy the local package files to the container workspace
-ADD . /go/src/github.com/mmorejon/cinema/showtimes
+ADD . /go/src/github.com/djaque/cinema/showtimes
 
 # Setting up working directory
-WORKDIR /go/src/github.com/mmorejon/cinema/showtimes
+WORKDIR /go/src/github.com/djaque/cinema/showtimes
 
 # Build the showtimes command inside the container.
-RUN go install github.com/mmorejon/cinema/showtimes
+RUN go install github.com/djaque/cinema/showtimes
 
 # Run the showtimes microservices when the container starts.
 ENTRYPOINT /go/bin/showtimes

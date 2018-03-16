@@ -4,8 +4,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/mmorejon/cinema/users/common"
-	"github.com/mmorejon/cinema/users/routers"
+	"github.com/djaque/cinema/users/common"
+	"github.com/djaque/cinema/users/routers"
 )
 
 // Entry point for the program

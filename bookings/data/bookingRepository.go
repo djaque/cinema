@@ -1,7 +1,7 @@
 package data
 
 import (
-	"github.com/mmorejon/cinema/bookings/models"
+	"github.com/djaque/cinema/bookings/models"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 )
